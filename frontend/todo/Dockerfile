@@ -1,15 +1,15 @@
 # Frontend Dockerfile
-FROM node:20-alpine as build
+FROM node:16 as build
 
 WORKDIR /app
 
 # Copy package.json and install dependencies
-COPY todo/package.json .
-COPY todo/package-lock.json .
+COPY package.json .
+COPY package-lock.json .
 RUN npm install
 
 # Copy all frontend source code
-COPY todo/ .
+COPY . .
 
 # Build the React app
 ARG REACT_APP_API_URL
