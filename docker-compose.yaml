@@ -1,85 +1,125 @@
 services:
-# databases
+  # databases
   auth-db:
     image: postgres
     restart: always
     env_file:
-      - ./auth_service/login_service/.env
+      - ./backend/auth_service/login_service/.env
     ports:
       - "5432:5432"
     volumes:
       - auth_pgdata:/var/lib/postgresql/data
+    networks:
+      - todo-network
 
   todo-db:
     image: postgres
     restart: always
     env_file:
-      - ./todo_service/clear_service/.env
+      - ./backend/todo_service/clear_service/.env
     ports:
       - "5433:5432"
     volumes:
       - todo_pgdata:/var/lib/postgresql/data
+    networks:
+      - todo-network
 
-# auth services
+  # auth services
   signup-service:
-    build: ./auth_service/signup_service
+    build: ./backend/auth_service/signup_service
     ports:
       - "8001:8000"
     depends_on:
       - auth-db
+    networks:
+      - todo-network
 
   login-service:
-    build: ./auth_service/login_service
+    build: ./backend/auth_service/login_service
     ports:
       - "8002:8000"
     depends_on:
       - auth-db
+    networks:
+      - todo-network
 
   validate-service:
-    build: ./auth_service/validate_service
+    build: ./backend/auth_service/validate_service
     ports:
       - "8003:8000"
     depends_on:
       - auth-db
+    networks:
+      - todo-network
 
-# todo services
+  # todo services
   todo-clear-service:
-    build: ./todo_service/clear_service
+    build: ./backend/todo_service/clear_service
     ports:
       - "8008:8000"
     depends_on:
       - todo-db
+    networks:
+      - todo-network
 
   todo-create-service:
-    build: ./todo_service/create_service
+    build: ./backend/todo_service/create_service
     ports:
       - "8005:8000"
     depends_on:
       - todo-db
+    networks:
+      - todo-network
 
   todo-delete-service:
-    build: ./todo_service/delete_service
+    build: ./backend/todo_service/delete_service
     ports:
       - "8007:8000"
     depends_on:
       - todo-db
+    networks:
+      - todo-network
 
   todo-read-service:
-    build: ./todo_service/read_service
+    build: ./backend/todo_service/read_service
     ports:
       - "8004:8000"
     depends_on:
       - todo-db
+    networks:
+      - todo-network
 
   todo-update-service:
-    build: ./todo_service/update_service
+    build: ./backend/todo_service/update_service
     ports:
       - "8006:8000"
     depends_on:
       - todo-db
+    networks:
+      - todo-network
 
-
+  # frontend
+  frontend:
+    build: 
+      context: ./frontend/todo
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    depends_on:
+      - todo-read-service
+      - todo-create-service
+      - todo-update-service
+      - todo-delete-service
+      - todo-clear-service
+    environment:
+      - REACT_APP_API_URL=http://localhost:8000/
+    networks:
+      - todo-network
 
 volumes:
   auth_pgdata:
   todo_pgdata:
+
+networks:
+  todo-network:
+    driver: bridge
