@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
-import FilterButton from "Components/TodoFilterButton/FilterButton";
-import { todoDisplayFilter } from "actions/filterAction";
+import FilterButton from "./FilterButton.js";
+import { todoDisplayFilter } from "../../actions/filterAction.js";
 
 const FilterButtonContainer = styled.div`
     display: flex;

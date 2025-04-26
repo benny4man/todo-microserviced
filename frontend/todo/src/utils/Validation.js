@@ -2,7 +2,7 @@ import {
     usernameRegex,
     usernameMinLength,
     passwordMinLength,
-} from 'Constants/Regex';
+} from '../Constants/Regex.js';
 
 export function validUsername(username) {
     return username.length >= usernameMinLength && usernameRegex.test(username);

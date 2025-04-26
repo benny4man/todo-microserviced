@@ -1,8 +1,8 @@
 import {
     OPEN_LOGIN_DIALOG,
     CLOSE_LOGIN_DIALOG,
-} from "actions/loginDialogAction";
-import { initialDialogState } from "reducers/initialState";
+} from "../actions/loginDialogAction.js";
+import { initialDialogState } from "./initialState.js";
 
 export function loginDialogReducer(state = initialDialogState, action) {
     switch (action.type) {

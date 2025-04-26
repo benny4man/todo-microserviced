@@ -6,7 +6,7 @@ import {
     DialogCloseButton,
     DialogInput,
     DialogButton,
-} from "Components/Dialog";
+} from "../../Components/Dialog";
 
 const SignUpDialogWrapper = styled.div`
     position: fixed;

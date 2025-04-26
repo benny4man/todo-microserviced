@@ -1,11 +1,11 @@
 import Cookies from "universal-cookie";
-import { BASE_URL } from "Constants/Url";
-import { ERROR } from "Constants/SnackBarVariant";
-import { setIsFetching } from "actions/fetchAction";
-import { closeSignUpDialog } from "actions/signUpDialogAction";
-import { closeLoginDialog } from "actions/loginDialogAction";
-import { setSnackBarState } from "actions/snackBarAction";
-import { setTodoList } from "actions/todoAction";
+import { BASE_URL } from "../Constants/Url.js";
+import { ERROR } from "../Constants/SnackBarVariant.js";
+import { setIsFetching } from "./fetchAction.js";
+import { closeSignUpDialog } from "./signUpDialogAction.js";
+import { closeLoginDialog } from "./loginDialogAction.js";
+import { setSnackBarState } from "./snackBarAction.js";
+import { setTodoList } from "./todoAction.js";
 
 export const LOGIN_USER = "LOGIN_USER";
 export const LOGOUT_USER = "LOGOUT_USER";

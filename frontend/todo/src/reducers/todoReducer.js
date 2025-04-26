@@ -4,9 +4,9 @@ import {
     UPDATE_TODO_ITEM,
     CLEAR_COMPLETED_TODO_ITEM,
     SET_TODO_LIST,
-} from "actions/todoAction";
-import { SET_IS_FETCHING } from "actions/fetchAction";
-import { initialTodoState } from "reducers/initialState";
+} from "../actions/todoAction.js";
+import { SET_IS_FETCHING } from "../actions/fetchAction.js";
+import { initialTodoState } from "./initialState.js";
 
 export function todoReducer(state = initialTodoState, action) {
     let newTodos, completed, uncompleted;

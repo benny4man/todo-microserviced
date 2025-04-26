@@ -1,3 +1,3 @@
-import UserInfoContainer from "Components/UserInfo/UserInfoContainer";
+import UserInfoContainer from "./UserInfoContainer.js";
 
 export default UserInfoContainer;

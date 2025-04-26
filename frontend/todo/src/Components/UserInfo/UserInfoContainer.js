@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
-import UserInfoComponent from "Components/UserInfo/UserInfoComponent";
+import UserInfoComponent from "./UserInfoComponent.js";
 import { useDispatch, useSelector } from "react-redux";
-import { openLoginDialog } from "actions/loginDialogAction";
-import { openSignUpDialog } from "actions/signUpDialogAction";
-import { loginUser, fetchLogoutUser } from "actions/authAction";
+import { openLoginDialog } from "../../actions/loginDialogAction.js";
+import { openSignUpDialog } from "../../actions/signUpDialogAction.js";
+import { loginUser, fetchLogoutUser } from "../../actions/authAction.js";
 import Cookies from "universal-cookie";
 
 const cookies = new Cookies();

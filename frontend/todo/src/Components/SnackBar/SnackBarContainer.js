@@ -1,7 +1,7 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { setSnackBarState } from "actions/snackBarAction";
-import SnackbarComponent from "Components/SnackBar/SnackBarComponent";
+import { setSnackBarState } from "../../actions/snackBarAction.js";
+import SnackbarComponent from "./SnackBarComponent.js";
 
 function SnackbarContainer() {
     const dispatch = useDispatch();

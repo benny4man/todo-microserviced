@@ -98,6 +98,7 @@ services:
     networks:
       - todo-network
 
+  # frontend
   frontend:
     build: 
       context: ./frontend/todo

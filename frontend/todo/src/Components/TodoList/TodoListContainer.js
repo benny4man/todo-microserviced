@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { fetchTodoList } from "actions/todoAction";
-import { getDisplayTodos } from "utils/getDisplayTodos";
-import TodoListComponent from "Components/TodoList/TodoListComponent";
+import { fetchTodoList } from "../../actions/todoAction.js";
+import { getDisplayTodos } from "../../utils/getDisplayTodos.js";
+import TodoListComponent from "./TodoListComponent.js";
 import Cookies from "universal-cookie";
 
 const cookies = new Cookies();

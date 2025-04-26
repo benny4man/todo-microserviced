@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
-import { ReactComponent as BaseUserIcon } from "assets/Icons/user.svg";
+import { ReactComponent as BaseUserIcon } from "../../assets/Icons/user.svg";
 
 const Name = styled.div`
     display: flex;

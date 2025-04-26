@@ -1,5 +1,5 @@
-import { LOGIN_USER, LOGOUT_USER } from "actions/authAction";
-import { initialLoggedInState } from "reducers/initialState";
+import { LOGIN_USER, LOGOUT_USER } from "../actions/authAction.js";
+import { initialLoggedInState } from "./initialState.js";
 import Cookies from "universal-cookie";
 
 const cookies = new Cookies();

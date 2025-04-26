@@ -1,3 +1,3 @@
-import TodoFilterButtonContainer from "Components/TodoFilterButton/TodoFilterButtonContainer";
+import TodoFilterButtonContainer from "./TodoFilterButtonContainer.js";
 
 export default TodoFilterButtonContainer;

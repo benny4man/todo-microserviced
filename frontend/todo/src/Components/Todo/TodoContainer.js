@@ -1,9 +1,9 @@
 import React, { useState, useRef } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { WARNING } from "Constants/SnackBarVariant";
-import { fetchUpdateTodoItem, fetchDeleteTodoItem } from "actions/todoAction";
-import { setSnackBarState } from "actions/snackBarAction";
-import TodoComponent from "Components/Todo/TodoComponent";
+import { WARNING } from "../../Constants/SnackBarVariant.js";
+import { fetchUpdateTodoItem, fetchDeleteTodoItem } from "../../actions/todoAction.js";
+import { setSnackBarState } from "../../actions/snackBarAction.js";
+import TodoComponent from "./TodoComponent.js";
 
 function TodoContainer({ item }) {
     const dispatch = useDispatch();

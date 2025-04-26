@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import ReactTooltip from "react-tooltip";
-import { ReactComponent as BaseInfoIcon } from "assets/Icons/information.svg";
+import { ReactComponent as BaseInfoIcon } from "../../assets/Icons/information.svg";
 
 const InfoIconContainer = styled.div`
     display: flex;

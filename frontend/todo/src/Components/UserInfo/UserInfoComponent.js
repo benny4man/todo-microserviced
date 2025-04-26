@@ -1,8 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
-import Username from "Components/UserInfo/Username";
-import AuthButton from "Components/UserInfo/AuthButton";
+import Username from "./Username.js";
+import AuthButton from "./AuthButton.js";
 
 const UserInfoContainer = styled.div`
     display: flex;

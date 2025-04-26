@@ -1,8 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
-import { ReactComponent as CloseIcon } from "assets/Icons/close.svg";
-
+import { ReactComponent as CloseIcon } from "../../assets/Icons/close.svg";
 const CloseButtonContainer = styled.div`
     position: absolute;
     top: 15px;

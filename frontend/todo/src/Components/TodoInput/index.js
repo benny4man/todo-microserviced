@@ -1,3 +1,3 @@
-import TodoInputContainer from "Components/TodoInput/TodoInputContainer";
+import TodoInputContainer from "./TodoInputContainer.js";
 
 export default TodoInputContainer;

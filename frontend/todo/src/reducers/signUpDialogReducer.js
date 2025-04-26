@@ -1,8 +1,8 @@
 import {
     OPEN_SIGNUP_DIALOG,
     CLOSE_SIGNUP_DIALOG,
-} from "actions/signUpDialogAction";
-import { initialDialogState } from "reducers/initialState";
+} from "../actions/signUpDialogAction.js";
+import { initialDialogState } from "./initialState.js";
 
 export function signUpDialogReducer(state = initialDialogState, action) {
     switch (action.type) {

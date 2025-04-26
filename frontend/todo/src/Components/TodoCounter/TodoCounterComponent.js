@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { ReactComponent as Cross } from 'assets/Icons/cross.svg';
-import { ReactComponent as Success } from 'assets/Icons/success.svg';
+import { ReactComponent as Cross } from '../../assets/Icons/cross.svg';
+import { ReactComponent as Success } from '../../assets/Icons/success.svg';
 
 const TodoCounterContainer = styled.div`
     display: flex;

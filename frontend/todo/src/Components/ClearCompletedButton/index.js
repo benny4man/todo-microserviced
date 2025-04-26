@@ -1,3 +1,3 @@
-import ClearCompletedButtonContainer from "Components/ClearCompletedButton/ClearCompletedButtonContainer";
+import ClearCompletedButtonContainer from "./ClearCompletedButtonContainer.js";
 
 export default ClearCompletedButtonContainer;

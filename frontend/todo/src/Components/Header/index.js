@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
-import TodoCounter from 'Components/TodoCounter/index.js';
-import TodoFilterButton from 'Components/TodoFilterButton';
-import ClearCompletedButton from 'Components/ClearCompletedButton';
+import TodoCounter from '../../Components/TodoCounter/index.js';
+import TodoFilterButton from '../../Components/TodoFilterButton';
+import ClearCompletedButton from '../../Components/ClearCompletedButton';
 
 const HeaderContainer = styled.div`
     display: flex;

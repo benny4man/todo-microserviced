@@ -1,3 +1,3 @@
-import SignUpDialogContainer from "Components/SignUpDialog/SignUpDialogContainer";
+import SignUpDialogContainer from "./SignUpDialogContainer.js";
 
 export default SignUpDialogContainer;

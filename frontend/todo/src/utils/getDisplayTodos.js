@@ -1,4 +1,4 @@
-import { todoDisplayFilter } from "actions/filterAction";
+import { todoDisplayFilter } from "../actions/filterAction.js";
 
 export function getDisplayTodos(state, filter) {
     switch (filter) {

@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import LoginDialogComponent from "Components/LoginDialog/LoginDialogComponent";
+import LoginDialogComponent from "./LoginDialogComponent.js";
 import { useSelector, useDispatch } from "react-redux";
-import { fetchLogin } from "actions/authAction";
-import { closeLoginDialog } from "actions/loginDialogAction";
-import { validUsername, validPassword } from "utils/Validation";
+import { fetchLogin } from "../../actions/authAction.js";
+import { closeLoginDialog } from "../../actions/loginDialogAction.js";
+import { validUsername, validPassword } from "../../utils/Validation.js";
 
 function LoginDialogContainer() {
     const dispatch = useDispatch();

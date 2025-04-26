@@ -1,9 +1,9 @@
 import React, { useState, useRef } from "react";
-import TodoInputComponent from "Components/TodoInput/TodoInputComponent";
-import { WARNING } from "Constants/SnackBarVariant";
+import TodoInputComponent from "./TodoInputComponent.js";
+import { WARNING } from "../../Constants/SnackBarVariant.js";
 import { useSelector, useDispatch } from "react-redux";
-import { setSnackBarState } from "actions/snackBarAction";
-import { fetchCreateTodoItem } from "actions/todoAction";
+import { setSnackBarState } from "../../actions/snackBarAction.js";
+import { fetchCreateTodoItem } from "../../actions/todoAction.js";
 
 function TodoInputContainer() {
     const dispatch = useDispatch();

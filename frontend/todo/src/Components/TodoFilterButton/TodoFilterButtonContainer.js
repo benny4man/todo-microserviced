@@ -1,7 +1,7 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { setDisplayFilter, todoDisplayFilter } from "actions/filterAction";
-import TodoFilterButtonComponent from "Components/TodoFilterButton/TodoFilterButtonComponent";
+import { setDisplayFilter, todoDisplayFilter } from "../../actions/filterAction.js";
+import TodoFilterButtonComponent from "./TodoFilterButtonComponent.js";
 
 function TodoFilterButtonContainer() {
     const dispatch = useDispatch();

@@ -5,7 +5,7 @@ import {
     DialogInput,
     DialogButton,
     DialogCloseButton,
-} from "Components/Dialog";
+} from "../../Components/Dialog";
 
 const LoginDialogWrapper = styled.div`
     position: fixed;

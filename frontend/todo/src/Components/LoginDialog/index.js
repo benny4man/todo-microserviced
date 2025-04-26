@@ -1,3 +1,3 @@
-import LoginDialogContainer from "Components/LoginDialog/LoginDialogContainer";
+import LoginDialogContainer from "./LoginDialogContainer.js";
 
 export default LoginDialogContainer;

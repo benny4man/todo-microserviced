@@ -1,5 +1,5 @@
-import { SET_SNACK_BAR_STATE } from "actions/snackBarAction";
-import { initialSnackBarState } from "reducers/initialState";
+import { SET_SNACK_BAR_STATE } from "../actions/snackBarAction.js";
+import { initialSnackBarState } from "./initialState.js";
 
 export function snackBarReducer(state = initialSnackBarState, action) {
     switch (action.type) {

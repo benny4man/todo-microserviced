@@ -1,18 +1,18 @@
 import React from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
-import TodoButton from "Components/Todo/TodoButton";
-import TodoUpdateInput from "Components/Todo/TodoUpdateInput";
+import TodoButton from "./TodoButton.js";
+import TodoUpdateInput from "./TodoUpdateInput.js";
 import {
     changeCompleteButtonStyle,
     deleteTodoItemButtonStyle,
     updateTodoItemButtonStyle,
-} from "Constants/ButtonStyles";
-import { ReactComponent as Success } from "assets/Icons/success.svg";
-import { ReactComponent as Cross } from "assets/Icons/cross.svg";
-import { ReactComponent as Trash } from "assets/Icons/trash.svg";
-import { ReactComponent as Pencil } from "assets/Icons/pencil.svg";
-import { ReactComponent as Save } from "assets/Icons/save.svg";
+} from "../../Constants/ButtonStyles.js";
+import { ReactComponent as Success } from "../../assets/Icons/success.svg";
+import { ReactComponent as Cross } from "../../assets/Icons/cross.svg";
+import { ReactComponent as Trash } from "../../assets/Icons/trash.svg";
+import { ReactComponent as Pencil } from "../../assets/Icons/pencil.svg";
+import { ReactComponent as Save } from "../../assets/Icons/save.svg";
 
 const TodoContainer = styled.div`
     display: flex;

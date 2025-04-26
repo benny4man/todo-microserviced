@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import BaseSnackBar from "@material-ui/core/Snackbar";
 import { makeStyles } from "@material-ui/core/styles";
-import Alert from "Components/SnackBar/Alert";
+import Alert from "./Alert.js";
 
 const useStyles = makeStyles((theme) => ({
     snackBar: {

@@ -1,13 +1,13 @@
 import React, { useState } from "react";
-import SignUpDialogComponent from "Components/SignUpDialog/SignUpDialogComponent";
+import SignUpDialogComponent from "./SignUpDialogComponent.js";
 import { useDispatch, useSelector } from "react-redux";
-import { fetchSignUp } from "actions/authAction";
-import { closeSignUpDialog } from "actions/signUpDialogAction";
+import { fetchSignUp } from "../../actions/authAction.js";
+import { closeSignUpDialog } from "../../actions/signUpDialogAction.js";
 import {
     validUsername,
     validPassword,
     validPasswordConfirm,
-} from "utils/Validation";
+} from "../../utils/Validation.js";
 
 function SignUpDialogContainer() {
     const dispatch = useDispatch();

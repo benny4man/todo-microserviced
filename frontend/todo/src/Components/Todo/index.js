@@ -1,3 +1,3 @@
-import TodoContainer from "Components/Todo/TodoContainer";
+import TodoContainer from "./TodoContainer.js";
 
 export default TodoContainer;

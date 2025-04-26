@@ -1,3 +1,3 @@
-import TodoListContainer from "Components/TodoList/TodoListContainer";
+import TodoListContainer from "./TodoListContainer.js";
 
 export default TodoListContainer;
